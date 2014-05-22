@@ -1,0 +1,296 @@
+/*********************
+GENERAL STYLES
+*********************/
+body{font-family:'Source Sans Pro', sans-serif;font-size:14px;line-height:1.428571429;color:#333;}
+
+/*********************
+WORDPRESS 
+*********************/
+.gallery-caption {}
+.bypostauthor {}
+
+/*********************
+ADMIN BAR ADJUST 
+*********************/
+.navbar-fixed-top{top:0;}
+body.admin-bar .navbar-fixed-top{top:28px!important;}
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+#inner-content{margin-left:-15px;margin-right:-15px;}
+#inner-content:before,#inner-content:after{content:" ";display:table;}
+#inner-content:after{clear:both;}
+#main{position:relative;min-height:1px;padding-left:15px;padding-right:15px;}
+.sidebar{padding-top:45px;}
+@media min-width 1200px {
+#main{float:left;width:66.666666666667%;}
+}
+
+/*********************
+LINK STYLES
+*********************/
+a:link,a:visited:link{-webkit-tap-highlight-color:rgba(0,0,0,0.3);}
+
+/**************
+H1-H5 STYLES
+***************/
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5{font-family:'Source Sans Pro', sans-serif;font-weight:200;text-rendering:optimizelegibility;}
+
+/* removing text decoration from H1-H5 links */
+h1 a,.h1 a,h2 a,.h2 a,h3 a,.h3 a,h4 a,.h4 a,h5 a,.h5 a{text-decoration:none;}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+.nav li ul.sub-menu li a,.nav li ul.children li a{padding-left:30px;}
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+#content{margin-top:5.2em;}
+.byline{color:#999;}
+.entry-content dd{margin-left:0;font-size:.9em;color:#787878;margin-bottom:1.5em;}
+.entry-content img{max-width:100%;height:auto;padding-bottom:15px;}
+.entry-content video,.entry-content object{max-width:100%;height:auto;}
+.entry-content pre{background:#eee;border:1px solid #cecece;padding:10px;}
+.wp-caption{max-width:100%;background:#eee;padding:5px;}
+.wp-caption img{max-width:100%;margin-bottom:0;width:100%;}
+.wp-caption p.wp-caption-text{font-size:.85em;text-align:center;margin:4px 0 7px;}
+
+/*******************
+PAGE NAVI STYLES
+********************/
+.page-navigation,.wp-prev-next{margin:1.1em 0 2.2em;}
+.bones_page_navi li{float:left;margin-left:10px;}
+.bones_page_navi li a{display:block;text-decoration:none;position:relative;padding:3px 6px;}
+.bones_page_navi li a:hover,.bones_page_navi li a:focus{color:#f01d4f;text-decoration:underline;}
+.bones_page_navi li.bpn-current{border-bottom:2px solid #f01d4f;position:relative;padding:3px 6px;}
+.bones_page_navi li.bpn-prev-link,.bones_page_navi li.bpn-next-link{font-weight:700;}
+.bones_page_navi li.bpn-prev-link a,.bones_page_navi li.bpn-next-link a{padding:0;}
+.bones_page_navi li.bpn-prev-link a:hover,.bones_page_navi li.bpn-next-link a:hover,.bones_page_navi li.bpn-first-page-link a:hover,.bones_page_navi li.bpn-last-page-link a:hover{background:none;}
+.wp-prev-next .prev-link{float:left;}
+.wp-prev-next .next-link{float:right;}
+
+/*****************
+COMMENT STYLES
+******************/
+.commentlist li{position:relative;clear:both;overflow:hidden;list-style-type:none;margin-bottom:1.5em;padding:.7335em 10px;}
+.commentlist li:last-child{margin-bottom:0;}
+.commentlist li ul.children{margin:0;}
+.commentlist li[class*=depth-]{margin-top:1.1em;}
+.commentlist li.depth-1{margin-left:0;margin-top:0;}
+.commentlist li:not(.depth-1){margin-right:-10px;margin-left:-10px;margin-top:0;padding-bottom:0;}
+.commentlist .odd{background:#eee;}
+.commentlist .even{background:#fefefe;}
+.commentlist .vcard cite.fn{font-weight:700;font-style:normal;}
+.commentlist .vcard time{float:right;}
+.commentlist .vcard time a{color:#999;text-decoration:none;}
+.commentlist .vcard time a:hover{text-decoration:underline;}
+.commentlist .vcard img.avatar{position:absolute;left:10px;border:1px solid #cecece;background:#fff;padding:2px;}
+.commentlist .comment_content p{font-size:1em;line-height:1.5em;margin:.7335em 0 1.5em;}
+.commentlist .comment-reply-link{text-decoration:none;float:right;background:#4598bb;color:#fff;opacity:0.65;margin-bottom:10px;font-weight:700;font-size:.9em;padding:3px 5px;}
+.commentlist .comment-reply-link:hover,.commentlist .comment-reply-link:focus{opacity:1;}
+.commentlist .vcard,.commentlist .comment_content{margin-left:50px;}
+
+/*************************
+COMMENT FORM STYLES
+**************************/
+.respond-form{padding-bottom:2.2em;margin:1.5em 10px;}
+.respond-form form{margin:.75em 0;}
+.respond-form form li{list-style-type:none;clear:both;margin-bottom:.7335em;}
+.respond-form form li label,.respond-form form li small{display:none;}
+.respond-form form input[type=text],.respond-form form input[type=email],.respond-form form input[type=url],.respond-form form textarea{background:#f7f7f7;border:2px solid #ddd;line-height:1.5em;padding:3px 6px;}
+.respond-form form input[type=text]:focus,.respond-form form input[type=email]:focus,.respond-form form input[type=url]:focus,.respond-form form textarea:focus{background:#fff;}
+.respond-form form input[type=text]:invalid,.respond-form form input[type=email]:invalid,.respond-form form input[type=url]:invalid,.respond-form form textarea:invalid{outline:none;background-color:#f6e7eb;-webkit-box-shadow:none;-moz-box-shadow:none;-ms-box-shadow:none;box-shadow:none;border-color:#fbc2c4;}
+.respond-form form input[type=text],.respond-form form input[type=email],.respond-form form input[type=url]{max-width:400px;min-width:250px;}
+.respond-form form textarea{resize:none;width:100%;height:130px;}
+#comment-form-title{margin:0 0 1.1em;}
+#allowed_tags{margin:1.5em 10px .7335em 0;}
+.nocomments{margin:0 20px 1.1em;}
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+.widget ul li {}
+
+/****************
+FOOTER STYLES
+*****************/
+.footer{border-top:1px solid #e5e5e5;padding-bottom:30px;clear:both;min-height:260px;background-color:#252528;color:#fff;padding-top:35px;}
+.footer-copyright{padding-top:15px;padding-bottom:15px;clear:both;background-color:#111114;color:#999;}
+.footer-copyright a{color:#999;}
+.footer-social{margin-top:60px;padding-top:15px;padding-bottom:15px;clear:both;background-color:#eee;color:#999;}
+.footer-social h3{margin-top:8px; font-weight:300;}
+.footer-nav{padding-left:0;margin:10px 0;}
+.footer p{color:#999!important;}
+.footer-nav li{list-style:none;text-decoration:none;padding:0 2px;}
+.footer-nav li a{color:#999!important;line-height:30px;}
+.footer-nav li a:hover{color:#eee!important;text-decoration:none;}
+.footer h3{margin-top:5px;}
+.social .social-icon{width:40px;height:40px;border-radius:20px;background-color:#ccc;color:#eee;text-align:center;font-size:20px;line-height:20px;margin:0;padding:10px;}
+.social .social-icon a:hover{color:#fff;text-decoration:none;}
+.footer-copyright a:hover,.social .social-icon a{color:#eee;text-decoration:none;}
+
+/*********************
+HOME STYLES
+*********************/
+.home-page{background-color:#eee;}
+#banner.home-page{margin-top:0;margin-bottom:3em;padding-top:20px;background:url(library/images/home-bg.jpg) no-repeat center top, url(library/images/home-bg-2.jpg) repeat-x 0 0;}
+#banner img{max-width:100%;display:block;margin:5px auto;}
+.home-three{text-align:center;}
+#banner.secondary-page{background:url(library/images/home-bg-secondary.jpg) no-repeat center top, url(library/images/home-bg-secondary-2.jpg) repeat-x 0 0;padding-top:100px;min-height:200px;}
+#banner.secondary-page h1{color:#fff;}
+
+/*
+RETINA (2x RESOLUTION DEVICES)
+This applies to the retina iPhone (4s) and iPad (2,3) along with
+other displays with a 2x resolution. You can also create a media
+query for retina AND a certain size if you want. 
+*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /******************************************************************
+  Site Name: 
+  Author: 
+  
+  Stylesheet: Retina Screens & Devices Stylesheet
+  
+  When handling retina screens you need to make adjustments, especially
+  if you're not using font icons. Here you can add them in one neat
+  place.
+  
+  ******************************************************************/
+  /* 
+  
+  EXAMPLE 
+  Let's say you have an image and you need to make sure it looks ok
+  on retina screens. Let's say we have an icon which dimension are
+  24px x 24px. In your regular stylesheets, it would look something
+  like this:
+  
+  .icon {
+  	width: 24px;
+  	height: 24px;
+  	background: url(img/test.png) no-repeat;
+  }
+  
+  For retina screens, we have to make some adjustments, so that image
+  doesn't look blurry. So, taking into account the image above and the
+  dimensions, this is what we would put in our retina stylesheet:
+  
+  .icon {
+  	background: url(img/test@2x.png) no-repeat;
+  	background-size: 24px 24px;
+  }
+  
+  So, you would create the same icon, but at double the resolution, meaning 
+  it would be 48px x 48px. You'd name it the same, but with a @2x at the end
+  (this is pretty standard practice). Set the background image so it matches
+  the original dimensions and you are good to go. 
+  
+  */
+}
+/*
+iPHONE 5 MEDIA QUERY
+Want to get fancy for no good reason? Knock yourself out.
+*/
+@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  
+}
+
+
+/*********************
+BOOTSTRAP EXTRAS
+*********************/
+.bs-line.dashed{border-bottom:1px dashed #e8e8e8;}
+.bs-space{margin:30px 0;}
+.carousel{margin-top:-30px;}
+.carousel-control.right,.carousel-control.left{background-image:none;}
+.carousel-caption{color:#fff;text-align:left;text-shadow:0 1px 2px rgba(0,0,0,0.3);left:30px;}
+.carousel-caption h1{font-size:63px;}
+.carousel-control .icon-prev,.carousel-control .icon-next,.carousel-control .glyphicon-chevron-left,.carousel-control .glyphicon-chevron-right{left:40%;}
+.feature{border-bottom:1px solid #e0e0e0;margin-bottom:45px;}
+.feature.last{border-bottom:none;margin-bottom:45px;}
+.feature .details h2{margin-top:45px;}
+.services .services-icon{width:70px;height:70px;border-radius:50px;background-color:#eee;color:#999;text-align:center;font-size:40px;line-height:40px;margin:0;padding:15px;}
+.titleline{float:left;width:100%;margin-bottom:15px;}
+.line1{float:left;width:25%;height:2px;background:#ddd;}
+.line2{float:left;width:75%;height:1px;background:#eee;margin-top:1px;}
+.fontawesome{list-style-type:none;color:#333;}
+.breadcrumb{background-color:#fff;}
+.tab-content ul,.tab-content p{padding-top:30px;}
+.primary-color{color:#428bca;}
+
+@media (max-width : 992px ){
+.carousel-caption{top:60px;}
+.carousel-caption h1{font-size: 32px;}
+}
+@media (max-width : 768px ){
+.carousel-caption{top:30px;}
+.carousel-caption h1{font-size: 22px;}
+}
+@media (max-width : 768px ){
+.carousel-caption{top:30px;}
+.carousel-caption h1{font-size: 22px;}
+}
+@media (max-width : 646px ){
+.carousel-caption{top:60px;}
+.carousel-caption p {visibility: hidden}
+}
+
+
+
+/*********************
+BOOTSTRAP PRICING TABLE
+*********************/
+.pricing{padding:10px 15px;}
+.pricing .plan.first{border-top-left-radius:5px;border-bottom-left-radius:5px;}
+.pricing .plan.last{border-top-right-radius:5px;border-bottom-right-radius:5px;}
+.pricing .plan.popular{border-bottom-left-radius:5px;border-bottom-right-radius:5px;border-radius:5px;}
+.pricing .plan.popular .header{margin-bottom:20px;border-top-left-radius:5px;border-top-right-radius:5px;}
+.pricing .col-sm-3,.pricing .col-md-3{padding-left:0;padding-right:0;}
+.pricing .plan.last .header{border-top-right-radius:5px;}
+.pricing .plan.first .header{border-top-left-radius:5px;}
+.plan{box-shadow:0 2px 2px #aaa;min-height:90px;background:#fff;border-radius:5px;padding-bottom:25px;text-align:center;margin:20px 0;}
+.plan .header{border-top-left-radius:5px;border-top-right-radius:5px;background:#eee;color:#999;padding:12px 15px;}
+.plan .header h1,.plan .header h2,.plan .header h3{font-weight:200;margin:0;padding:0;}
+.plan .price{border-top:1px dashed #ddd;width:90%;margin:0 auto 30px;}
+.plan .price h3{font-size:60px;vertical-align:top;line-height:1;}
+.plan .price h3 span{font-size:40px;vertical-align:top;position:relative;display:inline-block;margin:6px 0 0 -7px;}
+.plan .price h4{color:#aaa;font-size:14px;}
+.plan .btn{padding:15px 30px;}
+.plan ul{list-style-type:none;margin-top:2px;padding:20px;}
+.plan ul li{line-height:22px;margin-bottom:15px;}
+.plan ul li a{text-decoration:underline;color:#e6e9ed;}
+.plan ul li:last-child{border-bottom:none;}
+.plan.popular{margin-top:6px;box-shadow:0 0 15px #aaa;position:relative;z-index:99;border-radius:5px;}
+.plan.popular .header{border-top-left-radius:5px;border-top-right-radius:5px;background:#3a84b5;color:#fff;}
+.plan.popular .btn{margin-bottom:10px;}
+.pricing .plan,.pricing .plan .header{border-radius:0;}
+
+/*********************
+TOP NAVBAR 
+*********************/
+.navbar{padding:0;}
+.navbar.navbar-inverse{background:rgba(0,0,0,0.5);}
+.navbar.navbar-inverse.navbar-static-top{background-color:#252528;}
+.navbar.navbar-inverse.navbar-static-top .container{margin-top:0;margin-bottom:0;}
+.navbar.navbar-inverse .nav > li > a{color:#fff;text-shadow:0 1px 0 rgba(0,0,0,0.5);opacity:.8;filter:alpha(opacity=80);-webkit-transition:all .2s linear;-moz-transition:all .2s linear;transition:all .2s linear;text-decoration:none;padding:10px 15px;}
+.navbar.navbar-inverse .nav > li > a:hover,.navbar.navbar-inverse .nav > li > a:active{color:#fff;opacity:1;filter:alpha(opacity=100);}
+.navbar.navbar-inverse .nav > li.active > a{color:#fff;opacity:1;filter:alpha(opacity=100);background-color:transparent;}
+.navbar.sticky{background:rgba(0,0,0,0.8);border-bottom:1px solid #252525;}
+.navbar.sticky .container{margin-top:0!important;margin-bottom:0!important;}
+.navbar .container{margin-top:5px;margin-bottom:5px;-webkit-transition:margin .2s ease-in-out;-moz-transition:margin .2s ease-in-out;transition:margin .2s ease-in-out;}
+.navbar .container .navbar-header .navbar-brand{color:#ddd;text-shadow:0 -1px 0 rgba(0,0,0,0.25);font-size:20px;margin-left:0px;padding:10px 20px;}
+.navbar .container .collapse .nav .dropdown .caret{margin-bottom:4px;}
+.navbar .container .collapse .nav .dropdown .dropdown-menu{background:#042942;}
+.navbar .container .collapse .nav .dropdown .dropdown-menu > li > a{color:#fff;}
+.navbar .container .collapse .nav .dropdown .dropdown-menu > li > a:hover{background:#08c;}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { background-color: #042942;}
+
+@media (max-width:768px) {
+.navbar.navbar-inverse{background:#252528;}
+}
+@media (min-width:768px) {
+.navbar-right{float:right!important;}
+}

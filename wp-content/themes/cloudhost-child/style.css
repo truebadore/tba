@@ -1,0 +1,17 @@
+/*
+ Theme Name:   cloudhost TRUEBADORE Child
+ Theme URI:    http://dev.truebadore.com/cloudhost-child/
+ Description:  cloudhost Child Theme
+ Author:       Brian Bishop
+ Author URI:   http://truebadore.com
+ Template:     cloudhost
+ Version:      1.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  cloudhost-child
+*/
+
+@import url("../cloudhost/style.css");
+@import url("../cloudhost/rtl.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
