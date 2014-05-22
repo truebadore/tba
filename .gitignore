@@ -1,4 +1,7 @@
 .htaccess
+*.ico
+*.png
+*.jpg
 wp-content/plugins/
 wp-content/uploads/
 wp-content/blogs.dir/
