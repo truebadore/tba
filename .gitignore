@@ -3,6 +3,8 @@
 *.png
 *.jpg
 wp-admin/images/*.png
+wp-admin/images/*.gif
+wp-admin/images/*.svg
 wp-content/plugins/
 wp-content/uploads/
 wp-content/blogs.dir/
