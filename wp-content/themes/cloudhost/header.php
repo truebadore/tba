@@ -11,7 +11,7 @@
 	<!-- Google Chrome Frame for IE -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title><?php wp_title(''); ?> | <?php is_home() ? bloginfo('description') : wp_title(''); ?></title>
+	<title><?php wp_title(''); ?> | <?php is_home() ? bloginfo('description') : 'Management Consulting'; ?></title>
 
 	<!-- mobile meta (hooray!) -->
 	<meta name="HandheldFriendly" content="True">
@@ -56,7 +56,7 @@
 										<span class="icon-bar"></span>
 									</button>
 
-									<a class="navbar-brand" href="<?php echo home_url() ?>/" title="<?php bloginfo( 'name' ) ?>" ><i class="icon-cloud"></i> <?php bloginfo( 'name' ) ?></a>									
+									<a class="truebadore navbar-brand" href="<?php echo home_url() ?>/" title="<?php bloginfo( 'name' ) ?>" ><img src='<?php echo get_template_directory_uri(); ?>/library/images/tba-logo.png' /></a>									
 
 								</div>
 

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Formation\n"
-"POT-Creation-Date: 2014-03-04 20:21-0000\n"
-"PO-Revision-Date: 2014-03-04 20:21-0000\n"
+"POT-Creation-Date: 2014-04-06 08:49-0000\n"
+"PO-Revision-Date: 2014-04-06 08:49-0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -14,8 +14,8 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 "X-Poedit-SearchPath-2: .\n"
-"X-Poedit-SearchPath-3: \n"
-"X-Poedit-SearchPath-4: ..\n"
+"X-Poedit-SearchPath-3: ..\n"
+"X-Poedit-SearchPath-4: ./.\n"
 
 #: ../404.php:11
 msgid "Oops! That page can&rsquo;t be found."
@@ -263,12 +263,12 @@ msgstr ""
 msgid "Featured Text Area"
 msgstr ""
 
-#: ../functions.php:285 ../functions.php:330 ../functions.php:409
-#: ../functions.php:487
+#: ../functions.php:285 ../functions.php:326 ../functions.php:405
+#: ../functions.php:483
 msgid "This is a settings section to change the homepage featured text area."
 msgstr ""
 
-#: ../functions.php:292 ../functions.php:307
+#: ../functions.php:292
 msgid "Default Featured Text"
 msgstr ""
 
@@ -276,77 +276,157 @@ msgstr ""
 msgid "Featured Text Header"
 msgstr ""
 
-#: ../functions.php:314
-msgid "Featured Text"
+#: ../functions.php:310
+msgid "Featured Button url"
 msgstr ""
 
-#: ../functions.php:329
+#: ../functions.php:325
 msgid "Featured Text Box 1"
 msgstr ""
 
-#: ../functions.php:342
+#: ../functions.php:338
 msgid "Header Image One File Upload"
 msgstr ""
 
-#: ../functions.php:351
+#: ../functions.php:347
 msgid "Header One Link"
 msgstr ""
 
-#: ../functions.php:358 ../functions.php:437 ../functions.php:515
+#: ../functions.php:354 ../functions.php:433 ../functions.php:511
 msgid "Header Image url"
 msgstr ""
 
-#: ../functions.php:367 ../functions.php:446 ../functions.php:524
+#: ../functions.php:363 ../functions.php:442 ../functions.php:520
 msgid "Default featured text Header"
 msgstr ""
 
-#: ../functions.php:375
+#: ../functions.php:371
 msgid "Featured Header Text"
 msgstr ""
 
-#: ../functions.php:384 ../functions.php:463 ../functions.php:541
+#: ../functions.php:380 ../functions.php:459 ../functions.php:537
 msgid "Default featured text"
 msgstr ""
 
-#: ../functions.php:392 ../functions.php:471 ../functions.php:549
+#: ../functions.php:388 ../functions.php:467 ../functions.php:545
 msgid "Featured text"
 msgstr ""
 
-#: ../functions.php:408
+#: ../functions.php:404
 msgid "Featured Text Box 2"
 msgstr ""
 
-#: ../functions.php:421
+#: ../functions.php:417
 msgid "Header Image Two File Upload"
 msgstr ""
 
-#: ../functions.php:430
+#: ../functions.php:426
 msgid "Header Two Link"
 msgstr ""
 
-#: ../functions.php:454 ../functions.php:532
+#: ../functions.php:450 ../functions.php:528
 msgid "Featured Header text"
 msgstr ""
 
-#: ../functions.php:486
+#: ../functions.php:482
 msgid "Featured Text Box 3"
 msgstr ""
 
-#: ../functions.php:499
+#: ../functions.php:495
 msgid "Header Image Three File Upload"
 msgstr ""
 
-#: ../functions.php:508
+#: ../functions.php:504
 msgid "Header Three Link"
 msgstr ""
 
-#: ../functions.php:636
+#: ../functions.php:632
 #, php-format
 msgid "Page %s"
 msgstr ""
 
-#: ../functions.php:783
+#: ../functions.php:779
 msgid "Page"
+msgstr ""
+
+#: ../functions.php:819
+msgid "Client logo 1"
+msgstr ""
+
+#: ../functions.php:820
+msgid "This is a settings section to change the homepage logo area one."
+msgstr ""
+
+#: ../functions.php:832
+msgid "Client logo One File Upload"
+msgstr ""
+
+#: ../functions.php:841
+msgid "logo One Link"
+msgstr ""
+
+#: ../functions.php:848
+msgid "Client logo one url"
+msgstr ""
+
+#: ../functions.php:864
+msgid "Client logo 2"
+msgstr ""
+
+#: ../functions.php:865
+msgid "This is a settings section to change the homepage logo area two."
+msgstr ""
+
+#: ../functions.php:877
+msgid "Client logo two File Upload"
+msgstr ""
+
+#: ../functions.php:886
+msgid "logo two Link"
+msgstr ""
+
+#: ../functions.php:893
+msgid "Client logo two url"
+msgstr ""
+
+#: ../functions.php:909
+msgid "Client logo 3"
+msgstr ""
+
+#: ../functions.php:910
+msgid "This is a settings section to change the homepage logo area three."
+msgstr ""
+
+#: ../functions.php:922
+msgid "Client logo three File Upload"
+msgstr ""
+
+#: ../functions.php:931
+msgid "logo three Link"
+msgstr ""
+
+#: ../functions.php:938
+msgid "Client logo three url"
+msgstr ""
+
+#: ../functions.php:954
+msgid "Client logo 4"
+msgstr ""
+
+#: ../functions.php:955
+msgid "This is a settings section to change the homepage logo area four."
+msgstr ""
+
+#: ../functions.php:967
+msgid "Client logo four File Upload"
+msgstr ""
+
+#: ../functions.php:976
+msgid "logo four Link"
+msgstr ""
+
+#: ../functions.php:983
+msgid "Client logo four url"
 msgstr ""
 
 #: ../header.php:56
@@ -532,6 +612,8 @@ msgid "View all posts by %s"
 msgstr ""
 
 #: ../page-templates/custom_home.php:45 ../page-templates/custom_home.php:57
-#: ../page-templates/custom_home.php:69
+#: ../page-templates/custom_home.php:69 ../page-templates/custom_home.php:133
+#: ../page-templates/custom_home.php:142 ../page-templates/custom_home.php:151
+#: ../page-templates/custom_home.php:160
 msgid "Insert Image"
 msgstr ""

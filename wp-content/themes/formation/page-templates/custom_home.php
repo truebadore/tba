@@ -44,7 +44,7 @@ get_header(); ?>
       <?php else : ?>
       <?php echo '<h4>' . __('Insert Image', 'formation') . '</h4>'; ?>
       <?php endif; ?>
-			 <h3><?php echo esc_html(get_theme_mod( 'featured_textbox_header_one' ) ); ?></h3>
+			 <h3><a href="<?php echo esc_url( get_theme_mod( 'header_one_url' ) ); ?>"><?php echo esc_html(get_theme_mod( 'featured_textbox_header_one' ) ); ?></a></h3>
              <p><?php echo esc_html(get_theme_mod( 'featured_textbox_text_one' ) ); ?></p>
 	</div>
     </div>
@@ -56,7 +56,7 @@ get_header(); ?>
       <?php else : ?>
       <?php echo '<h4>' . __('Insert Image', 'formation') . '</h4>'; ?>
       <?php endif; ?>
-			 <h3><?php echo esc_html(get_theme_mod( 'featured_textbox_header_two' ) ); ?></h3>
+			<h3><a href="<?php echo esc_url( get_theme_mod( 'header_two_url' ) ); ?>"><?php echo esc_html(get_theme_mod( 'featured_textbox_header_two' ) ); ?></a></h3>
              <p><?php echo esc_html(get_theme_mod( 'featured_textbox_text_two' ) ); ?></p>
 	</div>
     </div>
@@ -68,7 +68,7 @@ get_header(); ?>
       <?php else : ?>
       <?php echo '<h4>' . __('Insert Image', 'formation') . '</h4>'; ?>
       <?php endif; ?>
-			 <h3><?php echo esc_html(get_theme_mod( 'featured_textbox_header_three' ) ); ?></h3>
+			 <h3><a href="<?php echo esc_url( get_theme_mod( 'header_three_url' ) ); ?>"><?php echo esc_html(get_theme_mod( 'featured_textbox_header_three' ) ); ?></a></h3>
              <p><?php echo esc_html(get_theme_mod( 'featured_textbox_text_three' ) ); ?></p>
 	</div>
     </div>
@@ -77,14 +77,19 @@ get_header(); ?>
     
      <div class="featuretext_top">
 			 <h3><?php echo esc_html(get_theme_mod( 'featured_textbox' ) ); ?></h3>
-             <p><?php echo esc_html(get_theme_mod( 'featured_textbox_text' ) ); ?></p>
-	</div>  
+             <div class="featuretext_button">
+            <?php if ( get_theme_mod( 'featured_button_url' ) ) : ?>
+			<a href="<?php echo esc_url( get_theme_mod( 'featured_button_url' ) ); ?>" >Find out More</a>
+			<?php endif; ?>
+			</div>  
+	</div> 
         
         <div id="primary_home" class="content-area">
 			<div id="content" class="fullwidth" role="main">
     
      <div class="section_thumbnails group">
 	<h3>Recent Posts</h3>
+    <div class="unity-separator"></div>
 
   <?php $the_query = new WP_Query(array(
   'showposts' => 4,
@@ -114,6 +119,50 @@ get_header(); ?>
 		
 	<?php endwhile; ?>
 
+    </div>
+    
+    <div class="section_clients group">
+   <div class="client">
+    <h3>Partners</h3>
+    <div class="unity-separator"></div>
+     <div class="col span_1_of_4">
+     <div class="client_recent">
+			  <?php if ( get_theme_mod( 'logo-one-file-upload' ) ) : ?>
+     		<a href="<?php echo esc_url( get_theme_mod( 'logo_one_url' ) ); ?>"><img src="<?php echo esc_url( get_theme_mod( 'logo-one-file-upload' ) ); ?>"  alt="logo one"></a>
+      <?php else : ?>
+      <?php echo '<h4>' . __('Insert Image', 'Formation') . '</h4>'; ?>
+      <?php endif; ?>
+     </div>
+	</div>
+    <div class="col span_1_of_4">
+    <div class="client_recent">
+			  <?php if ( get_theme_mod( 'logo-two-file-upload' ) ) : ?>
+     		<a href="<?php echo esc_url( get_theme_mod( 'logo_two_url' ) ); ?>"><img src="<?php echo esc_url( get_theme_mod( 'logo-two-file-upload' ) ); ?>"  alt="logo two"></a>
+      <?php else : ?>
+      <?php echo '<h4>' . __('Insert Image', 'Formation') . '</h4>'; ?>
+      <?php endif; ?>
+	</div>
+    </div>
+    <div class="col span_1_of_4">
+    <div class="client_recent">
+			  <?php if ( get_theme_mod( 'logo-three-file-upload' ) ) : ?>
+     		<a href="<?php echo esc_url( get_theme_mod( 'logo_three_url' ) ); ?>"><img src="<?php echo esc_url( get_theme_mod( 'logo-three-file-upload' ) ); ?>"  alt="logo three"></a>
+      <?php else : ?>
+      <?php echo '<h4>' . __('Insert Image', 'Formation') . '</h4>'; ?>
+      <?php endif; ?>
+	</div>
+    </div>
+    <div class="col span_1_of_4">
+    <div class="client_recent">
+			  <?php if ( get_theme_mod( 'logo-four-file-upload' ) ) : ?>
+     		<a href="<?php echo esc_url( get_theme_mod( 'logo_four_url' ) ); ?>"><img src="<?php echo esc_url( get_theme_mod( 'logo-four-file-upload' ) ); ?>"  alt="logo four"></a>
+      <?php else : ?>
+      <?php echo '<h4>' . __('Insert Image', 'Formation') . '</h4>'; ?>
+      <?php endif; ?>
+	</div>
+    </div>
+  
+	</div>
     </div>
 
 			</div><!-- #content .site-content -->

@@ -302,20 +302,16 @@ $wp_customize->add_control(
     )
 );
 
-$wp_customize->add_setting(
-	'featured_textbox_text', array(
-	'default' => __( 'Default Featured Text', 'Formation' ),
-	'sanitize_callback' => 'Formation_sanitize_text',
-		)
-	);
+$wp_customize->add_setting( 'featured_button_url' );
 	
 	$wp_customize->add_control(
-	'featured_textbox_text', array(
-	'label'    => __( 'Featured Text', 'Formation' ),
-	'section' => 'featured_section_top',
-	'type' => 'text',
+		'featured_button_url',
+		array(
+			'label'    => __( 'Featured Button url', 'Formation' ),
+			'section' => 'featured_section_top',
+			'type' => 'text',
 		)
-	);
+);
 }
 add_action( 'customize_register', 'Formation_customizer' );
 
@@ -804,3 +800,191 @@ function author_social_media( $socialmedialinks ) {
  }
  
 add_filter( 'user_contactmethods', 'author_social_media', 10, 1);
+
+/**
+ * Custom "more" link format
+ */
+function new_excerpt_more($more) {
+       global $post;
+	return '...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+/**
+ * Adds the individual section for client logo 1
+ */
+function client_logo_one_customizer( $wp_customize ) {
+    $wp_customize->add_section(
+    'logo_section_one', array(
+    'title' => __( 'Client logo 1', 'Formation' ),
+    'description' => __( 'This is a settings section to change the homepage logo area one.', 'Formation' ),
+    'priority' => 850,
+        )
+    );
+
+	$wp_customize->add_setting( 'logo-one-file-upload' );
+ 
+	$wp_customize->add_control(
+    new WP_Customize_Upload_Control(
+        $wp_customize,
+        'logo-one-file-upload',
+        array(
+            'label' => __( 'Client logo One File Upload', 'Formation' ),
+            'section' => 'logo_section_one',
+            'settings' => 'logo-one-file-upload'
+        )
+    )
+	);
+	
+	$wp_customize->add_setting( 'logo_one_url',
+    array(
+        'default' => __( 'logo One Link', 'Formation' ),
+		'sanitize_callback' => 'Formation_sanitize_url',
+    ) );
+	
+	$wp_customize->add_control(
+		'logo_one_url',
+		array(
+			'label'    => __( 'Client logo one url', 'Formation' ),
+			'section' => 'logo_section_one',
+			'type' => 'text',
+		)
+	);
+
+}
+add_action( 'customize_register', 'client_logo_one_customizer' );
+
+
+/**
+ * Adds the individual section for client logo 2
+ */
+function client_logo_two_customizer( $wp_customize ) {
+    $wp_customize->add_section(
+    'logo_section_two', array(
+    'title' => __( 'Client logo 2', 'Formation' ),
+    'description' => __( 'This is a settings section to change the homepage logo area two.', 'Formation' ),
+    'priority' => 900,
+        )
+    );
+
+	$wp_customize->add_setting( 'logo-two-file-upload' );
+ 
+	$wp_customize->add_control(
+    new WP_Customize_Upload_Control(
+        $wp_customize,
+        'logo-two-file-upload',
+        array(
+            'label' => __( 'Client logo two File Upload', 'Formation' ),
+            'section' => 'logo_section_two',
+            'settings' => 'logo-two-file-upload'
+        )
+    )
+	);
+	
+	$wp_customize->add_setting( 'logo_two_url',
+    array(
+        'default' => __( 'logo two Link', 'Formation' ),
+		'sanitize_callback' => 'Formation_sanitize_url',
+    ) );
+	
+	$wp_customize->add_control(
+		'logo_two_url',
+		array(
+			'label'    => __( 'Client logo two url', 'Formation' ),
+			'section' => 'logo_section_two',
+			'type' => 'text',
+		)
+	);
+
+}
+add_action( 'customize_register', 'client_logo_two_customizer' );
+
+
+/**
+ * Adds the individual section for client logo 3
+ */
+function client_logo_three_customizer( $wp_customize ) {
+    $wp_customize->add_section(
+    'logo_section_three', array(
+    'title' => __( 'Client logo 3', 'Formation' ),
+    'description' => __( 'This is a settings section to change the homepage logo area three.', 'Formation' ),
+    'priority' => 950,
+        )
+    );
+
+	$wp_customize->add_setting( 'logo-three-file-upload' );
+ 
+	$wp_customize->add_control(
+    new WP_Customize_Upload_Control(
+        $wp_customize,
+        'logo-three-file-upload',
+        array(
+            'label' => __( 'Client logo three File Upload', 'Formation' ),
+            'section' => 'logo_section_three',
+            'settings' => 'logo-three-file-upload'
+        )
+    )
+	);
+	
+	$wp_customize->add_setting( 'logo_three_url',
+    array(
+        'default' => __( 'logo three Link', 'Formation' ),
+		'sanitize_callback' => 'Formation_sanitize_url',
+    ) );
+	
+	$wp_customize->add_control(
+		'logo_three_url',
+		array(
+			'label'    => __( 'Client logo three url', 'Formation' ),
+			'section' => 'logo_section_three',
+			'type' => 'text',
+		)
+	);
+
+}
+add_action( 'customize_register', 'client_logo_three_customizer' );
+
+
+/**
+ * Adds the individual section for client logo 4
+ */
+function client_logo_four_customizer( $wp_customize ) {
+    $wp_customize->add_section(
+    'logo_section_four', array(
+    'title' => __( 'Client logo 4', 'Formation' ),
+    'description' => __( 'This is a settings section to change the homepage logo area four.', 'Formation' ),
+    'priority' => 1000,
+        )
+    );
+
+	$wp_customize->add_setting( 'logo-four-file-upload' );
+ 
+	$wp_customize->add_control(
+    new WP_Customize_Upload_Control(
+        $wp_customize,
+        'logo-four-file-upload',
+        array(
+            'label' => __( 'Client logo four File Upload', 'Formation' ),
+            'section' => 'logo_section_four',
+            'settings' => 'logo-four-file-upload'
+        )
+    )
+	);
+	
+	$wp_customize->add_setting( 'logo_four_url',
+    array(
+        'default' => __( 'logo four Link', 'Formation' ),
+		'sanitize_callback' => 'Formation_sanitize_url',
+    ) );
+	
+	$wp_customize->add_control(
+		'logo_four_url',
+		array(
+			'label'    => __( 'Client logo four url', 'Formation' ),
+			'section' => 'logo_section_four',
+			'type' => 'text',
+		)
+	);
+
+}
+add_action( 'customize_register', 'client_logo_four_customizer' );

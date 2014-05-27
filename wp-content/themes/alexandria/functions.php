@@ -171,6 +171,10 @@ function alexandria_scripts() {
 	
 	if( of_get_option('skin_style') == 'yellow' ) {
 		wp_enqueue_style( 'alexandria-yellow-style', get_template_directory_uri().'/skins/yellow.css' );
+	}	
+	
+	if( of_get_option('skin_style') == 'aqua' ) {
+		wp_enqueue_style( 'alexandria-aqua-style', get_template_directory_uri().'/skins/aqua.css' );
 	}				
 	
 	wp_enqueue_script( 'alexandria-tinynav', get_template_directory_uri() . '/js/tinynav.min.js', array('jquery'), false, false );
@@ -188,6 +192,16 @@ function alexandria_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'alexandria_scripts' );
+
+function alexandria_ltie9() {
+	echo "<!--[if lt IE 9]>
+<link rel='stylesheet' href='".get_template_directory_uri()."/fixed.css' type='text/css' media='all' />
+<![endif]-->";
+	echo "<!--[if lt IE 8]>
+<link rel='stylesheet' href='".get_template_directory_uri()."/ie.css' type='text/css' media='all' />
+<![endif]-->";
+}
+add_action( 'wp_head', 'alexandria_ltie9', 9 );
 
 /**
  * Implement the Custom Header feature.

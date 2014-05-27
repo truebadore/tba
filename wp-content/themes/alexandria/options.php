@@ -67,6 +67,7 @@ function optionsframework_options() {
 											'brown' => $imagepath . 'brown.png',
 											'orange' => $imagepath . 'orange.png',
 											'yellow' => $imagepath . 'yellow.png',
+											'aqua' => $imagepath . 'aqua.png',
 											'child' => $imagepath . 'child.png')
 										);						
 

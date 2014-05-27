@@ -4,7 +4,7 @@ Theme URI: http://www.templateexpress.com/formation-theme/
 Author: Ossie Heffell
 Author URI: http://www.templateexpress.com/
 Description: Formation is a full-width, fully responsive and highly customizable WordPress Theme. Add your own logo, header, featured areas, social media links and much more. This versatile theme also has several different layout templates that look great on devices of all sizes.
-Version: 1.9
+Version: 1.9.1
 License: GNU General Public License v2.0
 License URI: ​http://www.gnu.org/licenses/gpl-2.0.html
 Tags: light, white, one-column, two-columns, right-sidebar, fluid-layout, custom-header, custom-menu, featured-images, flexible-header, microformats, post-formats, rtl-language-support, threaded-comments, translation-ready, theme-options, full-width-template, black, responsive-layout
@@ -934,6 +934,11 @@ a.more-link:hover {
 	border-radius:0.4em;
 	background-color: #EFEFEF;
 }
+
+.client_recent {
+	margin: 0 4px 20px 4px;
+	background-color: #FFF;
+}
 .recent_title{
 	font-family: 'source_sans_probold', sans-serif;
 	font-size: 12px;
@@ -1534,6 +1539,9 @@ p.nocomments {
 .site-info a{
 	color: #AAA;
 }
+.site-info a:hover{
+	color: #FFF;
+}
 .site-footer .widget p{
 	color: #AAA;
 }
@@ -1667,6 +1675,29 @@ More info available with a FAQ at: http://scripts.sil.org/OFL
 	width: 24px;
 }
 
+/* Tag Cloud
+------------------------------------------------------ */
+.tagcloud a {
+	display: inline-block;
+	color: #89919B;
+	font-size: 12px !important;
+	padding: 5px 8px;
+	text-decoration: none;
+	border: 1px solid #10b9b9;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	transition: all 0.17s ease-in-out;
+	-moz-transition: all 0.17s ease-in-out;
+	-webkit-transition: all 0.17s ease-in-out;
+	-o-transition: all 0.17s ease-in-out;
+	margin: 4px;
+}
+.tagcloud a:hover {
+	color: #fff !important;
+	background: #10b9b9;
+}
 
 /* Custom Home featured areas
 ------------------------------------------------------ */
@@ -1675,6 +1706,7 @@ More info available with a FAQ at: http://scripts.sil.org/OFL
 	margin: 0 0 20px 0;
 	background-color: #E7E7E7;
 	font-family: 'source_sans_probold', sans-serif;
+	text-align: center;
 }
 
 .featuretext_top h3{
@@ -1718,24 +1750,43 @@ More info available with a FAQ at: http://scripts.sil.org/OFL
 	clear: both;
 }
 
+.featuretext h3 a{
+	color: #FFF;
+}
+
 .featuretext p{
 	color: #CCC;
 	font-size:1.2rem;
 	font-size: 12px;
+}
+.featuretext_button {
+	margin: 0;
+	color: #FFF;
+	padding: 24px 0;
+}
+.featuretext_button a{
+	color: #FFF;
+	padding: 12px 26px;
+	background-color:#10b9b9;
+	border-radius: 0.2em;
+	font-size:1.4rem;
+	font-size:14px;
+	text-align: center;
+	width: 120px;
+}
+.featuretext_button a:hover{
+	background-color:#000;
 }
 .featuretext img{
 	-webkit-transition-duration: 0.8s;
     -moz-transition-duration: 0.8s;
     -o-transition-duration: 0.8s;
     transition-duration: 0.8s;
-     
     -webkit-transition-property: -webkit-transform;
     -moz-transition-property: -moz-transform;
     -o-transition-property: -o-transform;
     transition-property: transform;
-     
     overflow:hidden;
- 
     }  
 .featuretext img:hover{
 	-webkit-transform:rotate(360deg);
@@ -1802,6 +1853,42 @@ More info available with a FAQ at: http://scripts.sil.org/OFL
    opacity:1;
    transition-delay: 0.3s;
 }			
+
+/* Client Ad Styles */
+
+.client {
+	text-align: center;
+}
+	
+.client h3{
+	font-family: 'source_sans_probold', sans-serif;
+	font-size: 1.6rem;
+	font-size: 16px;
+	position: relative;
+	top: 8px;
+	margin: 0 auto;
+	max-width: 110px;
+	background: #FFF;
+	text-align: center;
+	line-height: 16px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #333;
+	padding-top: 30px;
+}
+
+.client img{
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+	max-width: 100%;
+	margin: 0 4px 20px 4px;
+}
+.client img:hover{
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+    -webkit-filter: grayscale(0%);
+}
+
 /* CUSTOM HOMEPAGE WIDGET LAYOUTS */
 /*  SECTIONS  ============================================================================= */
 
@@ -1821,12 +1908,35 @@ More info available with a FAQ at: http://scripts.sil.org/OFL
 }
 .section_thumbnails h3{
 	font-family: 'source_sans_probold', sans-serif;
-	color: #222;
-	font-size:1.8rem;
-	font-size: 18px;
-	padding: 10px 2px;
+	font-size: 1.6rem;
+	font-size: 16px;
+	position: relative;
+	top: 8px;
+	margin: 0 auto;
+	max-width: 150px;
+	background: #FFF;
+	text-align: center;
+	line-height: 16px;
 	text-align: center;
 	text-transform: uppercase;
+	color: #333;
+	padding-top: 30px;
+}
+.section_clients {
+	clear: both;
+	padding: 20px 0;
+}
+.section_clients .col{
+	margin: 0px;
+}
+.unity-separator {
+	width: 100%;
+	height: 1px;
+	background: #d9e0e3;
+	-webkit-box-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.75 );
+	-moz-box-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.75 );
+	box-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.75 );
+	margin-bottom: 30px;
 }
 .thumbs-more-link{
     font-family: 'source_sans_probold', sans-serif;
