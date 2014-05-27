@@ -43,11 +43,9 @@
                 <div class="col-md-3 col-sm-3">  
                 <?php bones_footer_links_3(); ?>	
                 </div><!--/3-->
-                
-                <div class="col-md-3 col-sm-3">
-                		<h4>About Us</h4>  
-                        <p>Helping our clients grow - with responsible, ethical, and technological leadership. TRUEBADORE is poised to humanize the experience of using technology for meaningful business purposes. TRUEBADORE focuses on aligning aesthetic intelligence and technical prowess so that people will be delighted - not disillusioned - by the new reality that every business is a software business.</p>
-                </div><!--/3-->
+				  
+				<?php echo do_shortcode( '[contact-form-7 id="360" title="Footer Contact Form"]' ); ?>
+
            </div>						
 			</nav>
 

@@ -117,7 +117,7 @@ SIDEBARS & ASIDES
 /****************
 FOOTER STYLES
 *****************/
-.footer{border-top:1px solid #e5e5e5;padding-bottom:30px;clear:both;min-height:260px;background-color:#252528;color:#fff;padding-top:35px;}
+.footer{border-top:1px solid #e5e5e5;padding-bottom:20px;clear:both;min-height:260px;background-color:#252528;color:#fff;padding-top:20px;}
 .footer-copyright{padding-top:15px;padding-bottom:15px;clear:both;background-color:#111114;color:#999;}
 .footer-copyright a{color:#999;}
 .footer-social{margin-top:60px;padding-top:15px;padding-bottom:15px;clear:both;background-color:#eee;color:#999;}
