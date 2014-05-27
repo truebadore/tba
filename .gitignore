@@ -2,6 +2,7 @@
 *.ico
 *.png
 *.jpg
+wp-admin/images/*.png
 wp-content/plugins/
 wp-content/uploads/
 wp-content/blogs.dir/
