@@ -139,7 +139,7 @@ HOME STYLES
 #banner.home-page{margin-top:0;margin-bottom:3em;padding-top:20px;background:url(library/images/home-bg.jpg) no-repeat center top, url(library/images/home-bg-2.jpg) repeat-x 0 0;}
 #banner img{max-width:100%;display:block;margin:5px auto;}
 .home-three{text-align:center;}
-#banner.secondary-page{background:url(library/images/home-bg-secondary.jpg) no-repeat center top, url(library/images/home-bg-secondary-2.jpg) repeat-x 0 0;padding-top:100px;min-height:200px;}
+#banner.secondary-page{background:url(library/images/home-bg-secondary.jpg) no-repeat center top, url(library/images/home-bg-secondary-2.jpg) repeat-x 0 0;padding-top:100px;padding-bottom:275px;min-height:200px;}
 #banner.secondary-page h1{color:#fff;}
 
 /*
