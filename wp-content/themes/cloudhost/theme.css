@@ -294,3 +294,64 @@ TOP NAVBAR
 @media (min-width:768px) {
 .navbar-right{float:right!important;}
 }
+
+/****************** 
+Below is styling for the contact form used in the footer 
+******************/
+
+#two-column{
+	position: relative;
+	right: -70px;
+	width: 300px;
+}
+#two-column #left{
+	width: 60%;
+	float: left;
+}
+#two-column #right{
+	width: 40%;
+	float: right;
+}
+#two-column p{
+	margin-bottom: 12px;
+}
+#two-column input[type="text"], #two-column input[type="email"]{
+	border:none;
+	border:1px solid #000;
+	font-size :12px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	width: 150px;
+	padding: 5px;
+}
+#two-column textarea {
+    position: relative;
+    padding: 5px;
+    border:1px solid #000;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    width: 330px;
+    height: 60px;
+}
+#two-column input[type="submit"]{
+	padding:4px 15px;
+	height: 30px;
+	background:#e50000;
+	color:#ffe5d3;
+	border: 1px solid #ef9991;
+	float:left;
+	font-size: 14px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+#two-column input[type="text"]:focus, #two-column textarea:focus{
+	background: #eee;
+}
+#two-column input[type="submit"]:hover{
+	background:#fff;
+	color:#222;
+	border: 1px solid #222;
+}
