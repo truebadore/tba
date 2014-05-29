@@ -329,6 +329,7 @@ Below is styling for the contact form used in the footer
     position: relative;
     padding: 5px;
     border:1px solid #000;
+    font-size: 12px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
